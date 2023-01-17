@@ -20,8 +20,8 @@ public class CollectorRepository {
 	@Autowired
 	private SqlSession sqlSession;
 
-	public Integer register(Map<String, Object> map) throws Exception {
-		return sqlSession.insert(namespace + ".register", map);
+	public Integer buy(Map<String, Object> map) throws Exception {
+		return sqlSession.insert(namespace + ".buy", map);
 	}
 	public Integer update(Map<String, Object> map) throws Exception {
 		return sqlSession.update(namespace + ".update", map);

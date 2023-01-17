@@ -37,7 +37,8 @@ public class CollectorService {
 
 
 
-	public Integer register(@RequestParam Map<String, Object> map) throws Exception {
+	public Integer buy(@RequestParam Map<String, Object> map) throws Exception {
+
 
 
 
@@ -72,7 +73,8 @@ public class CollectorService {
 		Integer balance = Intger.valueOf(String.valueOf(map2.get("balance")));
 
 		if (balance >= Integer.valueOf(price)*Integer.valueOf(amount))	{
-			// api 호출
+			// api 호출 - user - walletId 코인종류, 가격 * 갯수 호출 - 유저 아이디와 매핑
+
 			//~~ 테이블에 ~~를 넣는다
 		}	else {
 			// 잔액부족 리턴
@@ -82,7 +84,7 @@ public class CollectorService {
 		// result = 구매 api 요청 응답값
 		// result = "200";
 
-		return collectorRepository.register(map);
+		return collectorRepository.buy(map);
 	}
 	public Integer update(@RequestParam Map<String, Object> map) throws Exception {
 		System.out.println("[SERVICE]"  + map );

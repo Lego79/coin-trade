@@ -4,20 +4,27 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.test.mapper.collectorMapper">
-	<insert id="register" parameterType="HashMap">
-		insert into book
-			(book_id,
-			book_nm,
-			author,
-			color,
-			 reg_dt)
+	<insert id="buy" parameterType="HashMap">
+		insert into coin_wallet
+			(user_id,
+			 balance,
+			 red_dt)
 		values	(
-		        #{bookId}::integer,
-		        #{bookNm},
-		        #{author},
-		        #{color},
-		        current_timestamp
+		        #{user_id}::integer,
+		        #{user_id}::integer,
+				red_dt_timestamp
 				  )
+
+		insert into coin
+		(user_id,
+		 balance,
+		 red_dt)
+		values	(
+			#{user_id}::integer,
+			#{user_id}::integer,
+			red_dt_timestamp
+			)
+
 	</insert>
 
 
