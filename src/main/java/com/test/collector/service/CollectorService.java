@@ -15,6 +15,7 @@ import java.util.Map;
 
 import javax.validation.ValidationException;
 
+import com.test.collector.dto.CollectorDto;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +35,7 @@ public class CollectorService {
 
 	@Autowired
 	private CollectorRepository collectorRepository;
+	private CollectorDto collectorDto;
 
 
 
@@ -118,6 +120,7 @@ public class CollectorService {
 		인풋
 		map
 		- 코인 종류
+		//coin type
 
 		행위
 		- 바이낸스 코인 구매 api에서 현재 시세 얼만지 요청
