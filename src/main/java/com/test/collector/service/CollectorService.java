@@ -76,6 +76,7 @@ public class CollectorService {
 
 		if (balance >= Integer.valueOf(price)*Integer.valueOf(amount))	{
 			// api 호출 - user - walletId 코인종류, 가격 * 갯수 호출 - 유저 아이디와 매핑
+			// api binace api = binance api
 
 			//~~ 테이블에 ~~를 넣는다
 		}	else {
