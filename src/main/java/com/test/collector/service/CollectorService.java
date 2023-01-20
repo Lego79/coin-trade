@@ -81,6 +81,7 @@ public class CollectorService {
 			//~~ 테이블에 ~~를 넣는다
 		}	else {
 			// 잔액부족 리턴
+			//exception (balnce is not enough0
 		}
 
 		String result ="";
