@@ -47,7 +47,7 @@ public class CollectorService {
 		/*
 		인풋
 		map
-		- 코인 구매자 정보 (지갑정보)
+		- 코인 구매자 정보 (지갑정보) //get api from binace wallet service
 		- 코인 종류
 		- 금액
 		- ex) 현재가 구매여부 ...
