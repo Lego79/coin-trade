@@ -21,6 +21,12 @@ public class CollectorController {
 	public Integer buy(@RequestParam Map<String, Object> map) throws Exception {
 		System.out.println("controller - buy" + map);
 
+		//binace api 통해서 유저정보 얻기
+
+		//유저정보와 사려는 코인의 type 매핑
+
+		//구매 결정
+
 
 
 		//누가 어떤걸 얼마에 구입할건지
